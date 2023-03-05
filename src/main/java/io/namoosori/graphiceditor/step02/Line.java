@@ -1,6 +1,6 @@
-package io.namoosori.graphiceditor.step01;
+package io.namoosori.graphiceditor.step02;
 
-public class Line {
+public class Line extends Shape {
     public void drawLine() {
         System.out.println("Drawing Line");
     }
