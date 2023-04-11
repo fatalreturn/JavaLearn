@@ -35,6 +35,25 @@ public class ClubConsole {
     }
 
     public void findById() {
+        TravelClub foundClub = null;
+
+        while(true) {
+            String clubId = consoleUtil.getValueOf("Club id to find(0.Club Menu)");
+            if (clubId.equals("0")) {
+                break;
+            }
+
+            //foundClub = clubService.find(clubId);
+
+            if (foundClub != null) {
+                System.out.println(foundClub.toString());
+            }else {
+                System.out.println("Can not find club, Id : " +clubId);
+            }
+        }
+    }
+
+    public void findByName() {
 
     }
 }
